@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.web.controller.ArtistControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:10:53" hostname="YORKSHIRE" time="1.625">
+  <properties/>
+  <testcase name="updateArtist" classname="ro.ubb.web.controller.ArtistControllerTest" time="1.485"/>
+  <testcase name="deleteArtist" classname="ro.ubb.web.controller.ArtistControllerTest" time="0.045"/>
+  <testcase name="addArtist" classname="ro.ubb.web.controller.ArtistControllerTest" time="0.02"/>
+  <testcase name="getArtists" classname="ro.ubb.web.controller.ArtistControllerTest" time="0.075"/>
+  <system-out><![CDATA[2021-05-19T17:10:54,583 TRACE [Test worker]: ArtistController                     - updating a artist 
+2021-05-19T17:10:54,589 TRACE [Test worker]: ArtistController                     - artist updated 
+2021-05-19T17:10:54,636 TRACE [Test worker]: ArtistController                     - deleting a artist 
+2021-05-19T17:10:54,636 TRACE [Test worker]: ArtistController                     - artist deleted 
+2021-05-19T17:10:54,667 TRACE [Test worker]: ArtistController                     - adding a user 
+2021-05-19T17:10:54,667 TRACE [Test worker]: ArtistController                     - artist added 
+2021-05-19T17:10:54,683 TRACE [Test worker]: ArtistController                     - fetching users 
+[{"id":1,"name":"Marcel","description":"rapper"},{"id":2,"name":"Mario","description":"rapper"}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.core.repository.UserRepositoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:11:07" hostname="YORKSHIRE" time="0.078">
+  <properties/>
+  <testcase name="delete" classname="ro.ubb.core.repository.UserRepositoryTest" time="0.032"/>
+  <testcase name="findAll" classname="ro.ubb.core.repository.UserRepositoryTest" time="0.009"/>
+  <testcase name="update" classname="ro.ubb.core.repository.UserRepositoryTest" time="0.02"/>
+  <testcase name="add" classname="ro.ubb.core.repository.UserRepositoryTest" time="0.015"/>
+  <system-out><![CDATA[2021-05-19T17:11:07,763 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: select reviews0_.userId as userId5_1_0_, reviews0_.reviewId as reviewId1_1_0_, reviews0_.reviewId as reviewId1_1_1_, reviews0_.review_text as review_t2_1_1_, reviews0_.songId as songId4_1_1_, reviews0_.stars as stars3_1_1_, reviews0_.userId as userId5_1_1_ from review reviews0_ where reviews0_.userId=?
+Hibernate: delete from userTable where userId=?
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:07,794 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:07,794 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: update userTable set name=? where userId=?
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:07,826 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select user0_.userId as userId1_3_1_, user0_.name as name2_3_1_, reviews1_.userId as userId5_1_3_, reviews1_.reviewId as reviewId1_1_3_, reviews1_.reviewId as reviewId1_1_0_, reviews1_.review_text as review_t2_1_0_, reviews1_.songId as songId4_1_0_, reviews1_.stars as stars3_1_0_, reviews1_.userId as userId5_1_0_ from userTable user0_ left outer join review reviews1_ on user0_.userId=reviews1_.userId where user0_.userId=?
+Hibernate: insert into userTable (userId, name) values (null, ?)
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

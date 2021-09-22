@@ -1,0 +1,52 @@
+<h2 class="m-2">Add an artist:</h2>
+
+<form class="m-2" [formGroup]="artistForm" #formDir="ngForm">
+  <div class="form-group">
+<!--    <label for="nameInput">Name</label>-->
+    <mat-label>Name</mat-label>
+
+    <input formControlName="name" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Enter name">
+    <small id="nameHelp" class="form-text text-muted">Name must be larger that 5 characters.</small>
+
+    <div *ngIf="name.invalid && (name.dirty || name.touched)">
+      <div *ngIf="name.errors.required" class="alert alert-warning">
+        Name is required.
+      </div>
+      <div *ngIf="name.errors.pattern" class="alert alert-warning">
+        Name must consist only of upper/lower-case letters.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label for="descriptionInput">Description</label>
+    <input formControlName="description" class="form-control" id="descriptionInput" aria-describedby="descriptionHelp" placeholder="Enter description">
+    <small id="descriptionHelp" class="form-text text-muted">Name must be larger that 5 characters.</small>
+
+    <div *ngIf="description.invalid && (description.dirty || description.touched)">
+      <div *ngIf="description.errors.required" class="alert alert-warning ">
+        Description is required.
+      </div>
+      <div *ngIf="description.errors.pattern" class="alert alert-warning ">
+        Description must consist only of upper/lower-case letters.
+      </div>
+    </div>
+
+    <div *ngIf="formDir.submitted" class="submitted-message">
+      <p *ngIf="errorHappened">Artist add failed: artist already exists</p>
+    </div>
+
+  </div>
+
+  <button [disabled]="artistForm.invalid" type="submit" class="btn btn-primary" (click)="addArtist(artistForm.value.name, artistForm.value.description)">Add Artist</button>
+
+</form>
+
+<nav>
+  <button class="btn m-2" routerLink="/artists" routerLinkActive="active">Go back</button>
+</nav>
+
+
+
+

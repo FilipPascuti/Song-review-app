@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.core.service.UserServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:11:08" hostname="YORKSHIRE" time="0.088">
+  <properties/>
+  <testcase name="getByExactName" classname="ro.ubb.core.service.UserServiceTest" time="0.017"/>
+  <testcase name="addUser" classname="ro.ubb.core.service.UserServiceTest" time="0.011"/>
+  <testcase name="updateUser" classname="ro.ubb.core.service.UserServiceTest" time="0.015"/>
+  <testcase name="getByNameLike" classname="ro.ubb.core.service.UserServiceTest" time="0.01"/>
+  <testcase name="deleteUser" classname="ro.ubb.core.service.UserServiceTest" time="0.016"/>
+  <testcase name="getUsers" classname="ro.ubb.core.service.UserServiceTest" time="0.013"/>
+  <system-out><![CDATA[2021-05-19T17:11:08,227 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select distinct u.userId as userId1_3_0_, u.name as name2_3_0_ from usertable u where u.name = ?
+2021-05-19T17:11:08,249 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - Adding user with nameMarius 
+Hibernate: insert into userTable (userId, name) values (null, ?)
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - Added user with id5 
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel), User(super=BaseEntity(id=5), name=Marius)] 
+2021-05-19T17:11:08,264 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - updateUser - method entered: id=1, name=Dorinel 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - updateUser - method finished 
+Hibernate: update userTable set name=? where userId=?
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorinel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+2021-05-19T17:11:08,280 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select distinct u.userId as userId1_3_0_, u.name as name2_3_0_ from usertable u where u.name like ?
+2021-05-19T17:11:08,280 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,280 TRACE [Test worker]: UserService                          - Removing user with id 1 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: select reviews0_.userId as userId5_1_0_, reviews0_.reviewId as reviewId1_1_0_, reviews0_.reviewId as reviewId1_1_1_, reviews0_.review_text as review_t2_1_1_, reviews0_.songId as songId4_1_1_, reviews0_.stars as stars3_1_1_, reviews0_.userId as userId5_1_1_ from review reviews0_ where reviews0_.userId=?
+Hibernate: delete from userTable where userId=?
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - Removed user with id 1 
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+2021-05-19T17:11:08,296 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,311 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,311 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,41 @@
+server:
+  port:
+    8080
+
+spring:
+  cloud:
+    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:
+#              - GET
+#              - POST
+#              - DELETE
+#              - PUT
+      routes:
+        - id: USER-SERVICE
+          uri: http://${USERS:localhost}:3001
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - RewritePath=/api/users/(?<segment>.*), /users/$\{segment}
+        - id: ARTIST-SERVICE
+          uri: http://${ARTISTS:localhost}:3002
+          predicates:
+            - Path=/api/artists/**
+          filters:
+            - RewritePath=/api/artists/(?<segment>.*), /artists/$\{segment}
+        - id: SONG-SERVICE
+          uri: http://${SONGS:localhost}:3003
+          predicates:
+            - Path=/api/songs/**
+          filters:
+            - RewritePath=/api/songs/(?<segment>.*), /songs/$\{segment}
+        - id: REVIEW-SERVICE
+          uri: http://${REVIEWS:localhost}:3004
+          predicates:
+            - Path=/api/reviews/**
+          filters:
+            - RewritePath=/api/reviews/(?<segment>.*), /reviews/$\{segment}

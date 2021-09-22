@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ro.ubb.core.repository.SongRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ro.ubb.core.repository.SongRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ro.ubb.core.repository.html">ro.ubb.core.repository</a> &gt; SongRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.085s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">add</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findAll</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-05-19T17:11:07,663 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:07,663 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select song0_.songId as songId1_2_0_, song0_.artistId as artistId5_2_0_, song0_.key as key2_2_0_, song0_.length as length3_2_0_, song0_.title as title4_2_0_ from song song0_ where song0_.songId=?
+Hibernate: select reviews0_.songId as songId4_1_0_, reviews0_.reviewId as reviewId1_1_0_, reviews0_.reviewId as reviewId1_1_1_, reviews0_.review_text as review_t2_1_1_, reviews0_.songId as songId4_1_1_, reviews0_.stars as stars3_1_1_, reviews0_.userId as userId5_1_1_ from review reviews0_ where reviews0_.songId=?
+Hibernate: delete from song where songId=?
+Hibernate: select song0_.songId as songId1_2_, song0_.artistId as artistId5_2_, song0_.key as key2_2_, song0_.length as length3_2_, song0_.title as title4_2_ from song song0_
+2021-05-19T17:11:07,694 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:07,694 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select song0_.songId as songId1_2_, song0_.artistId as artistId5_2_, song0_.key as key2_2_, song0_.length as length3_2_, song0_.title as title4_2_ from song song0_
+2021-05-19T17:11:07,710 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:07,710 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select song0_.songId as songId1_2_0_, song0_.artistId as artistId5_2_0_, song0_.key as key2_2_0_, song0_.length as length3_2_0_, song0_.title as title4_2_0_ from song song0_ where song0_.songId=?
+Hibernate: update song set artistId=?, key=?, length=?, title=? where songId=?
+Hibernate: select song0_.songId as songId1_2_, song0_.artistId as artistId5_2_, song0_.key as key2_2_, song0_.length as length3_2_, song0_.title as title4_2_ from song song0_
+2021-05-19T17:11:07,725 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:07,725 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select song0_.songId as songId1_2_, song0_.artistId as artistId5_2_, song0_.key as key2_2_, song0_.length as length3_2_, song0_.title as title4_2_ from song song0_
+Hibernate: select song0_.songId as songId1_2_1_, song0_.artistId as artistId5_2_1_, song0_.key as key2_2_1_, song0_.length as length3_2_1_, song0_.title as title4_2_1_, reviews1_.songId as songId4_1_3_, reviews1_.reviewId as reviewId1_1_3_, reviews1_.reviewId as reviewId1_1_0_, reviews1_.review_text as review_t2_1_0_, reviews1_.songId as songId4_1_0_, reviews1_.stars as stars3_1_0_, reviews1_.userId as userId5_1_0_ from song song0_ left outer join review reviews1_ on song0_.songId=reviews1_.songId where song0_.songId=?
+Hibernate: insert into song (songId, artistId, key, length, title) values (null, ?, ?, ?, ?)
+Hibernate: select song0_.songId as songId1_2_, song0_.artistId as artistId5_2_, song0_.key as key2_2_, song0_.length as length3_2_, song0_.title as title4_2_ from song song0_
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.7</a> at May 19, 2021, 5:11:08 PM</p>
+</div>
+</div>
+</body>
+</html>

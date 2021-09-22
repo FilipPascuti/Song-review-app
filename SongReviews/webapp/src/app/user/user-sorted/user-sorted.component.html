@@ -1,0 +1,22 @@
+<div class="container m-2">
+  <h2>Sorted Users:</h2>
+
+
+  <table class="table table-hover m-2">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button mat-raised-button color="primary" class="m-2" routerLink="/users" routerLinkActive="active">Go back</button>
+
+</div>

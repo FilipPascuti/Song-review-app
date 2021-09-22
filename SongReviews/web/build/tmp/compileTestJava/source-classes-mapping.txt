@@ -1,0 +1,8 @@
+ro/ubb/web/controller/UserControllerTest.java
+ ro.ubb.web.controller.UserControllerTest
+ro/ubb/web/controller/ArtistControllerTest.java
+ ro.ubb.web.controller.ArtistControllerTest
+ro/ubb/web/controller/SongControllerTest.java
+ ro.ubb.web.controller.SongControllerTest
+ro/ubb/web/controller/ReviewControllerTest.java
+ ro.ubb.web.controller.ReviewControllerTest

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.web.controller.ReviewControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:10:54" hostname="YORKSHIRE" time="0.181">
+  <properties/>
+  <testcase name="addSong" classname="ro.ubb.web.controller.ReviewControllerTest" time="0.126"/>
+  <testcase name="updateSong" classname="ro.ubb.web.controller.ReviewControllerTest" time="0.022"/>
+  <testcase name="deleteSong" classname="ro.ubb.web.controller.ReviewControllerTest" time="0.018"/>
+  <testcase name="getSongs" classname="ro.ubb.web.controller.ReviewControllerTest" time="0.015"/>
+  <system-out><![CDATA[2021-05-19T17:10:54,890 TRACE [Test worker]: ReviewController                     - adding a review 
+2021-05-19T17:10:54,890 TRACE [Test worker]: ReviewController                     - review added 
+2021-05-19T17:10:54,906 TRACE [Test worker]: ReviewController                     - updating a review 
+2021-05-19T17:10:54,906 TRACE [Test worker]: ReviewController                     - review updated 
+2021-05-19T17:10:54,921 TRACE [Test worker]: ReviewController                     - deleting a review 
+2021-05-19T17:10:54,921 TRACE [Test worker]: ReviewController                     - review deleted 
+2021-05-19T17:10:54,937 TRACE [Test worker]: ReviewController                     - fetching reviews 
+[{"id":1,"user":{"id":1,"name":"Mario"},"song":{"id":1,"details":{"title":"Turtles","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},"stars":3,"reviewText":"nice ish"},{"id":2,"user":{"id":1,"name":"Mario"},"song":{"id":1,"details":{"title":"Turtles","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},"stars":1,"reviewText":"not nice"}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

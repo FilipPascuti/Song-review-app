@@ -1,0 +1,34 @@
+h2021-05-19T17:10:54,583 TRACE [Test worker]: ArtistController                     - updating a artist 
+e2021-05-19T17:10:54,589 TRACE [Test worker]: ArtistController                     - artist updated 
+h2021-05-19T17:10:54,636 TRACE [Test worker]: ArtistController                     - deleting a artist 
+e2021-05-19T17:10:54,636 TRACE [Test worker]: ArtistController                     - artist deleted 
+d2021-05-19T17:10:54,667 TRACE [Test worker]: ArtistController                     - adding a user 
+c2021-05-19T17:10:54,667 TRACE [Test worker]: ArtistController                     - artist added 
+e2021-05-19T17:10:54,683 TRACE [Test worker]: ArtistController                     - fetching users 
+b[{"id":1,"name":"Marcel","description":"rapper"},{"id":2,"name":"Mario","description":"rapper"}]
+f2021-05-19T17:10:54,890 TRACE [Test worker]: ReviewController                     - adding a review 
+c2021-05-19T17:10:54,890 TRACE [Test worker]: ReviewController                     - review added 
+h2021-05-19T17:10:54,906 TRACE [Test worker]: ReviewController                     - updating a review 
+e2021-05-19T17:10:54,906 TRACE [Test worker]: ReviewController                     - review updated 
+	h2021-05-19T17:10:54,921 TRACE [Test worker]: ReviewController                     - deleting a review 
+	e2021-05-19T17:10:54,921 TRACE [Test worker]: ReviewController                     - review deleted 
+
+g2021-05-19T17:10:54,937 TRACE [Test worker]: ReviewController                     - fetching reviews 
+
+“[{"id":1,"user":{"id":1,"name":"Mario"},"song":{"id":1,"details":{"title":"Turtles","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},"stars":3,"reviewText":"nice ish"},{"id":2,"user":{"id":1,"name":"Mario"},"song":{"id":1,"details":{"title":"Turtles","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},"stars":1,"reviewText":"not nice"}]
+d2021-05-19T17:10:55,022 TRACE [Test worker]: SongController                       - adding a song 
+a2021-05-19T17:10:55,022 TRACE [Test worker]: SongController                       - song added 
+f2021-05-19T17:10:55,037 TRACE [Test worker]: SongController                       - updating a song 
+c2021-05-19T17:10:55,037 TRACE [Test worker]: SongController                       - song updated 
+f2021-05-19T17:10:55,053 TRACE [Test worker]: SongController                       - deleting a song 
+c2021-05-19T17:10:55,053 TRACE [Test worker]: SongController                       - song deleted 
+e2021-05-19T17:10:55,069 TRACE [Test worker]: SongController                       - fetching songs 
+ï[{"id":1,"details":{"title":"Stars","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},{"id":2,"details":{"title":"Borcane","length":200,"key":"B"},"artist":{"id":1,"name":"Marcel","description":"rapper"}}]
+d2021-05-19T17:10:55,138 TRACE [Test worker]: UserController                       - adding a user 
+a2021-05-19T17:10:55,138 TRACE [Test worker]: UserController                       - user added 
+f2021-05-19T17:10:55,159 TRACE [Test worker]: UserController                       - updating a user 
+c2021-05-19T17:10:55,159 TRACE [Test worker]: UserController                       - user updated 
+f2021-05-19T17:10:55,174 TRACE [Test worker]: UserController                       - deleting a user 
+c2021-05-19T17:10:55,174 TRACE [Test worker]: UserController                       - user deleted 
+e2021-05-19T17:10:55,207 TRACE [Test worker]: UserController                       - fetching users 
+4[{"id":1,"name":"Marcel"},{"id":2,"name":"Mario"}]

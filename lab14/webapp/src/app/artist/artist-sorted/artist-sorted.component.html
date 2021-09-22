@@ -1,0 +1,33 @@
+<div class="container m-2">
+  <h2>Sorted artists:</h2>
+
+  <br>
+
+  <table class="table table-hover m-2">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let artist of artists">
+      <td>{{artist.id}}</td>
+      <td>{{artist.name}}</td>
+      <td>{{artist.description}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="errorHappened">
+    <p>Unsuccessful filter</p>
+  </div>
+
+  <button mat-raised-button color="primary" class="m-2" routerLink="/artists" routerLinkActive="active">Go back</button>
+
+
+</div>
+
+
+

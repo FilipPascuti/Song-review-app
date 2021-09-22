@@ -1,0 +1,87 @@
+ro/ubb/core/repository/song/SongJPQLRepositoryImpl.java
+ ro.ubb.core.repository.song.SongJPQLRepositoryImpl
+ro/ubb/core/repository/artist/ArtistCustomRepository.java
+ ro.ubb.core.repository.artist.ArtistCustomRepository
+ro/ubb/core/domain/BaseEntity.java
+ ro.ubb.core.domain.BaseEntity
+ro/ubb/core/repository/user/UserRepositoryCustom.java
+ ro.ubb.core.repository.user.UserRepositoryCustom
+ro/ubb/core/exceptions/XMLRepositoryException.java
+ ro.ubb.core.exceptions.XMLRepositoryException
+ro/ubb/core/repository/song/SongCustomRepository.java
+ ro.ubb.core.repository.song.SongCustomRepository
+ro/ubb/core/validation/ReviewValidator.java
+ ro.ubb.core.validation.ReviewValidator
+ro/ubb/core/service/stastisticEntities/ActiveUser.java
+ ro.ubb.core.service.stastisticEntities.ActiveUser
+ ro.ubb.core.service.stastisticEntities.ActiveUser$ActiveUserBuilder
+ro/ubb/core/domain/Review.java
+ ro.ubb.core.domain.Review
+ ro.ubb.core.domain.Review$ReviewBuilder
+ro/ubb/core/repository/artist/ArtistCriteriaRepositoryImpl.java
+ ro.ubb.core.repository.artist.ArtistCriteriaRepositoryImpl
+ro/ubb/core/validation/SongValidator.java
+ ro.ubb.core.validation.SongValidator
+ro/ubb/core/domain/SongDetails.java
+ ro.ubb.core.domain.SongDetails
+ ro.ubb.core.domain.SongDetails$SongDetailsBuilder
+ro/ubb/core/repository/song/SongNativeRepositoryImpl.java
+ ro.ubb.core.repository.song.SongNativeRepositoryImpl
+ro/ubb/core/repository/user/UserNativeRepositoryImpl.java
+ ro.ubb.core.repository.user.UserNativeRepositoryImpl
+ro/ubb/core/domain/Artist.java
+ ro.ubb.core.domain.Artist
+ ro.ubb.core.domain.Artist$ArtistBuilder
+ro/ubb/core/exceptions/ElementNotFoundException.java
+ ro.ubb.core.exceptions.ElementNotFoundException
+ro/ubb/core/exceptions/AlreadyExistingElementException.java
+ ro.ubb.core.exceptions.AlreadyExistingElementException
+ro/ubb/core/repository/user/UserCriteriaRepositoryImpl.java
+ ro.ubb.core.repository.user.UserCriteriaRepositoryImpl
+ro/ubb/core/exceptions/ProgramException.java
+ ro.ubb.core.exceptions.ProgramException
+ro/ubb/core/repository/artist/ArtistRepository.java
+ ro.ubb.core.repository.artist.ArtistRepository
+ro/ubb/core/validation/UserValidator.java
+ ro.ubb.core.validation.UserValidator
+ro/ubb/core/repository/artist/ArtistNativeRepositoryImpl.java
+ ro.ubb.core.repository.artist.ArtistNativeRepositoryImpl
+ro/ubb/core/repository/user/UserRepository.java
+ ro.ubb.core.repository.user.UserRepository
+ro/ubb/core/validation/ArtistValidator.java
+ ro.ubb.core.validation.ArtistValidator
+ro/ubb/core/config/JPAConfig.java
+ ro.ubb.core.config.JPAConfig
+ro/ubb/core/service/stastisticEntities/SongsWithReviewAverage.java
+ ro.ubb.core.service.stastisticEntities.SongsWithReviewAverage
+ ro.ubb.core.service.stastisticEntities.SongsWithReviewAverage$SongsWithReviewAverageBuilder
+ro/ubb/core/domain/Song.java
+ ro.ubb.core.domain.Song
+ ro.ubb.core.domain.Song$SongBuilder
+ro/ubb/core/exceptions/DatabaseException.java
+ ro.ubb.core.exceptions.DatabaseException
+ro/ubb/core/service/UserService.java
+ ro.ubb.core.service.UserService
+ro/ubb/core/repository/artist/ArtistJPQLRepositoryImpl.java
+ ro.ubb.core.repository.artist.ArtistJPQLRepositoryImpl
+ro/ubb/core/exceptions/ValidatorException.java
+ ro.ubb.core.exceptions.ValidatorException
+ro/ubb/core/service/ArtistService.java
+ ro.ubb.core.service.ArtistService
+ro/ubb/core/validation/Validator.java
+ ro.ubb.core.validation.Validator
+ro/ubb/core/repository/Repository.java
+ ro.ubb.core.repository.Repository
+ro/ubb/core/domain/User.java
+ ro.ubb.core.domain.User
+ ro.ubb.core.domain.User$UserBuilder
+ro/ubb/core/repository/user/UserJPQLRepositoryImpl.java
+ ro.ubb.core.repository.user.UserJPQLRepositoryImpl
+ro/ubb/core/repository/song/SongCriteriaRepositoryImpl.java
+ ro.ubb.core.repository.song.SongCriteriaRepositoryImpl
+ro/ubb/core/service/SongService.java
+ ro.ubb.core.service.SongService
+ro/ubb/core/repository/song/SongRepository.java
+ ro.ubb.core.repository.song.SongRepository
+ro/ubb/core/service/ReviewService.java
+ ro.ubb.core.service.ReviewService

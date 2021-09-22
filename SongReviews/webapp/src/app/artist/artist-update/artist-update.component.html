@@ -1,0 +1,41 @@
+<h2 class="m-2">Update artist with id: {{artistId}}</h2>
+
+<div *ngIf="artist">
+  <form class="m-2" #updateForm="ngForm" (ngSubmit)="updateArtist()">
+    <div class="form-group">
+      <label for="nameInput">Name</label>
+
+      <input type="text" class="form-control" id="nameInput"
+             required minlength="5"
+             [(ngModel)]="artist.name" name="name"
+             #name="ngModel">
+
+
+      <small id="nameHelp" class="form-text text-muted">Name must be larger that 5 characters.</small>
+
+      <div class="alert alert-warning " *ngIf="updateForm.dirty && name.invalid">Description has to be at least 5 characters long</div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="descriptionInput">Description</label>
+
+      <input type="text" class="form-control" id="descriptionInput"
+             required minlength="5"
+             [(ngModel)]="artist.description" name="description"
+             #description="ngModel">
+
+
+      <small id="descriptionHelp" class="form-text text-muted">Name must be larger that 5 characters.</small>
+
+      <div class="alert alert-warning " *ngIf="updateForm.dirty && description.invalid ">Description has to be at least 5 characters long</div>
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Artist</button>
+
+  </form>
+</div>
+
+<button mat-raised-button color="primary" class="m-2" routerLink="/artists/list" routerLinkActive="active">Go back</button>

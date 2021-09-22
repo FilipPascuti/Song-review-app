@@ -1,0 +1,16 @@
+ro/ubb/core/JPAConfigIT.java
+ ro.ubb.core.JPAConfigIT
+ro/ubb/core/ITConfig.java
+ ro.ubb.core.ITConfig
+ro/ubb/core/repository/UserRepositoryTest.java
+ ro.ubb.core.repository.UserRepositoryTest
+ro/ubb/core/repository/SongRepositoryTest.java
+ ro.ubb.core.repository.SongRepositoryTest
+ro/ubb/core/repository/ArtistRepositoryTest.java
+ ro.ubb.core.repository.ArtistRepositoryTest
+ro/ubb/core/service/UserServiceTest.java
+ ro.ubb.core.service.UserServiceTest
+ro/ubb/core/service/ArtistServiceTest.java
+ ro.ubb.core.service.ArtistServiceTest
+ro/ubb/core/service/SongServiceTest.java
+ ro.ubb.core.service.SongServiceTest

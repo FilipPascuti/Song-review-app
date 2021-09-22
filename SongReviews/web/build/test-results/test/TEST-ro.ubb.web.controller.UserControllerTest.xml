@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.web.controller.UserControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:10:55" hostname="YORKSHIRE" time="0.111">
+  <properties/>
+  <testcase name="addUser" classname="ro.ubb.web.controller.UserControllerTest" time="0.047"/>
+  <testcase name="updateUser" classname="ro.ubb.web.controller.UserControllerTest" time="0.02"/>
+  <testcase name="deleteUser" classname="ro.ubb.web.controller.UserControllerTest" time="0.018"/>
+  <testcase name="getUsers" classname="ro.ubb.web.controller.UserControllerTest" time="0.025"/>
+  <system-out><![CDATA[2021-05-19T17:10:55,138 TRACE [Test worker]: UserController                       - adding a user 
+2021-05-19T17:10:55,138 TRACE [Test worker]: UserController                       - user added 
+2021-05-19T17:10:55,159 TRACE [Test worker]: UserController                       - updating a user 
+2021-05-19T17:10:55,159 TRACE [Test worker]: UserController                       - user updated 
+2021-05-19T17:10:55,174 TRACE [Test worker]: UserController                       - deleting a user 
+2021-05-19T17:10:55,174 TRACE [Test worker]: UserController                       - user deleted 
+2021-05-19T17:10:55,207 TRACE [Test worker]: UserController                       - fetching users 
+[{"id":1,"name":"Marcel"},{"id":2,"name":"Mario"}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

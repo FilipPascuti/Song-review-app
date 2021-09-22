@@ -1,0 +1,10 @@
+<dataset>
+
+    <artist artistId="1" description="rapper" name="Johny"/>
+
+    <song songId="1" key="A" length="100" title="Stars" artistId="1"/>
+    <song songId="2" key="A" length="100" title="Borcane" artistId="1"/>
+    <song songId="3" key="A" length="100" title="Vesela" artistId="1"/>
+
+
+</dataset>

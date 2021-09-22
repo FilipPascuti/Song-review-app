@@ -1,0 +1,45 @@
+<mat-toolbar>
+  <span>Add a new song:</span>
+</mat-toolbar>
+
+<form [formGroup]="songForm"  #formDir="ngForm">
+
+  <mat-form-field appearance="legacy" class="m-3">
+    <mat-label>title</mat-label>
+    <input matInput placeholder="title" formControlName="title" autocomplete="off">
+    <mat-error *ngIf="title.invalid && title.dirty" class="has-text-danger">
+      Name should be at least 5 characters long.
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Length</mat-label>
+    <input matInput type="number" class="example-right-align" formControlName="length">
+    <mat-error *ngIf="length.invalid && length.dirty" class="has-text-danger">
+      Length must be between 10 and 900.
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="m-3">
+    <mat-label>Key</mat-label>
+    <mat-select formControlName="key">
+      <mat-option value="A">A</mat-option>
+      <mat-option value="B">B</mat-option>
+      <mat-option value="C">C</mat-option>
+      <mat-option value="D">D</mat-option>
+      <mat-option value="E">E</mat-option>
+      <mat-option value="F">F</mat-option>
+      <mat-option value="G">G</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-error *ngIf="formDir.submitted" class="has-text-danger">
+    <p *ngIf="errorHappened">Song add failed: song already exists</p>
+  </mat-error>
+
+  <button [disabled]="songForm.invalid" mat-raised-button color="primary" (click)="addSong(title.value, length.value, key.value)">Add song</button>
+
+</form>
+
+
+<button mat-raised-button color="primary" class="m-2" routerLink="/artists/list" routerLinkActive="active">Go back</button>

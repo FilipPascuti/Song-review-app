@@ -1,0 +1,87 @@
+version: '3.4'
+services:
+    frontend:
+        build:
+            context: ./webapp
+        ports:
+            -   80:80
+        links:
+            - gateway
+        depends_on:
+            - gateway
+    gateway:
+        environment:
+            USERS: "users"
+            ARTISTS: "artists"
+            SONGS: "songs"
+            REVIEWS: "reviews"
+        build:
+            context: ./gateway
+        ports:
+            - "8080:8080"
+        links:
+            -   users
+            -   songs
+            -   artists
+            -   reviews
+        depends_on:
+            -   users
+            -   songs
+            -   artists
+            -   reviews
+    users:
+        build:
+            context: ./railsUserService
+        ports:
+            - "3001:3001"
+        links:
+            -   postgres
+        depends_on:
+            -   postgres
+    artists:
+        build:
+            context: ./railsArtistService
+        ports:
+            -   "3002:3002"
+        links:
+            -   postgres
+        depends_on:
+            - postgres
+    songs:
+        environment:
+            DB_URL: "postgres"
+            GATEWAY: "gateway"
+        build:
+            context: ./songs
+        ports:
+            - "3003:3003"
+        links:
+            -   artists
+            -   postgres
+        depends_on:
+            - postgres
+            - artists
+    reviews:
+        environment:
+            DB_URL: "postgres"
+            GATEWAY: "gateway"
+        build:
+            context: ./review
+        ports:
+            - "3004:3004"
+        links:
+            -   users
+            -   songs
+            -   postgres
+        depends_on:
+            - postgres
+            - users
+            - songs
+    postgres:
+        image: postgres
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: admin
+            POSTGRES_DB: microservice
+        ports:
+            - "5432:5432"

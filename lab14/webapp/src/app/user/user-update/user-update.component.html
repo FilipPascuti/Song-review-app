@@ -1,0 +1,13 @@
+<h1 class="m-2">Update a user:</h1>
+
+<input class="m-2" type="number" #id placeholder="Id">
+
+<input class="m-2" type="text" #name placeholder="Name">
+
+<button class="btn" (click)="updateUser(+id.value, name.value)">Add User</button>
+
+<div *ngIf="flag">
+  <p>Unsuccessful update</p>
+</div>
+
+<button mat-raised-button color="primary" class="m-2" routerLink="/users" routerLinkActive="active">Go back</button>

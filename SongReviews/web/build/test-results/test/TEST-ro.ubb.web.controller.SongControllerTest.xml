@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.web.controller.SongControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-19T14:10:54" hostname="YORKSHIRE" time="0.108">
+  <properties/>
+  <testcase name="addSong" classname="ro.ubb.web.controller.SongControllerTest" time="0.049"/>
+  <testcase name="updateSong" classname="ro.ubb.web.controller.SongControllerTest" time="0.024"/>
+  <testcase name="deleteSong" classname="ro.ubb.web.controller.SongControllerTest" time="0.016"/>
+  <testcase name="getSongs" classname="ro.ubb.web.controller.SongControllerTest" time="0.019"/>
+  <system-out><![CDATA[2021-05-19T17:10:55,022 TRACE [Test worker]: SongController                       - adding a song 
+2021-05-19T17:10:55,022 TRACE [Test worker]: SongController                       - song added 
+2021-05-19T17:10:55,037 TRACE [Test worker]: SongController                       - updating a song 
+2021-05-19T17:10:55,037 TRACE [Test worker]: SongController                       - song updated 
+2021-05-19T17:10:55,053 TRACE [Test worker]: SongController                       - deleting a song 
+2021-05-19T17:10:55,053 TRACE [Test worker]: SongController                       - song deleted 
+2021-05-19T17:10:55,069 TRACE [Test worker]: SongController                       - fetching songs 
+[{"id":1,"details":{"title":"Stars","length":100,"key":"A"},"artist":{"id":1,"name":"Marcel","description":"rapper"}},{"id":2,"details":{"title":"Borcane","length":200,"key":"B"},"artist":{"id":1,"name":"Marcel","description":"rapper"}}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

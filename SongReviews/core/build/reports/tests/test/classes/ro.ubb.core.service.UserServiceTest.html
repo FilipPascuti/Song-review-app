@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ro.ubb.core.service.UserServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ro.ubb.core.service.UserServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ro.ubb.core.service.html">ro.ubb.core.service</a> &gt; UserServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.082s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addUser</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteUser</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getByExactName</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getByNameLike</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getUsers</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateUser</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-05-19T17:11:08,227 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select distinct u.userId as userId1_3_0_, u.name as name2_3_0_ from usertable u where u.name = ?
+2021-05-19T17:11:08,249 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - Adding user with nameMarius 
+Hibernate: insert into userTable (userId, name) values (null, ?)
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - Added user with id5 
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,249 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel), User(super=BaseEntity(id=5), name=Marius)] 
+2021-05-19T17:11:08,264 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - updateUser - method entered: id=1, name=Dorinel 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - updateUser - method finished 
+Hibernate: update userTable set name=? where userId=?
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,264 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorinel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+2021-05-19T17:11:08,280 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+Hibernate: select distinct u.userId as userId1_3_0_, u.name as name2_3_0_ from usertable u where u.name like ?
+2021-05-19T17:11:08,280 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,280 TRACE [Test worker]: UserService                          - Removing user with id 1 
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: select user0_.userId as userId1_3_0_, user0_.name as name2_3_0_ from userTable user0_ where user0_.userId=?
+Hibernate: select reviews0_.userId as userId5_1_0_, reviews0_.reviewId as reviewId1_1_0_, reviews0_.reviewId as reviewId1_1_1_, reviews0_.review_text as review_t2_1_1_, reviews0_.songId as songId4_1_1_, reviews0_.stars as stars3_1_1_, reviews0_.userId as userId5_1_1_ from review reviews0_ where reviews0_.userId=?
+Hibernate: delete from userTable where userId=?
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - Removed user with id 1 
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,296 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+2021-05-19T17:11:08,296 WARN  [Test worker]: AbstractTableMetaData                - Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'H2' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products. 
+2021-05-19T17:11:08,311 TRACE [Test worker]: UserService                          - getUsers --- method entered 
+Hibernate: select user0_.userId as userId1_3_, user0_.name as name2_3_ from userTable user0_
+2021-05-19T17:11:08,311 TRACE [Test worker]: UserService                          - getUsers: result=[User(super=BaseEntity(id=1), name=Dorel), User(super=BaseEntity(id=2), name=Marcel), User(super=BaseEntity(id=3), name=Viorel)] 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.7</a> at May 19, 2021, 5:11:08 PM</p>
+</div>
+</div>
+</body>
+</html>
